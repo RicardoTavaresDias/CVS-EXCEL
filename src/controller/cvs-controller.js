@@ -10,7 +10,7 @@ export class CvsController {
 
       // Cria uma nova pasta de trabalho (book)
       const book = XLSX.utils.book_new()
-      XLSX.utils.book_append_sheet(book, sheet, 'request')
+      XLSX.utils.book_append_sheet(book, sheet, 'Ativos')
 
       // Salva o arquivo
       XLSX.writeFile(book, 'teste.xlsx')
@@ -73,7 +73,7 @@ export class CvsController {
 
       // Cria uma nova pasta de trabalho (book), criando nova planilha com dados novos
       const book = XLSX.utils.book_new()
-      XLSX.utils.book_append_sheet(book, sheetNew, 'request')
+      XLSX.utils.book_append_sheet(book, sheetNew, 'Ativos')
 
       // Salva o arquivo
       XLSX.writeFile(book, './teste.xlsx')
@@ -110,7 +110,7 @@ export class CvsController {
 
       // Cria uma nova pasta de trabalho (book), criando nova planilha com dados novos
       const book = XLSX.utils.book_new()
-      XLSX.utils.book_append_sheet(book, sheetNew, 'request')
+      XLSX.utils.book_append_sheet(book, sheetNew, 'Ativos')
 
       // Salva o arquivo
       XLSX.writeFile(book, './teste.xlsx')
@@ -151,7 +151,7 @@ export class CvsController {
 
       // Cria uma nova pasta de trabalho (book), criando nova planilha com dados novos
       const book = XLSX.utils.book_new()
-      XLSX.utils.book_append_sheet(book, sheetNew, 'request')
+      XLSX.utils.book_append_sheet(book, sheetNew, 'Ativos')
 
       // Salva o arquivo
       XLSX.writeFile(book, './teste.xlsx')

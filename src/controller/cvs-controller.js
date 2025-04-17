@@ -132,16 +132,20 @@ export class CvsController {
 
       // Converte a planilha para JSON
       const insert = XLSX.utils.sheet_to_json(sheet, {  header: 2 })
-      
+
       // Verifica se o usuario já existe na planilha
-      const filterUser = insert.filter(value => value.SERIE === request.body.SERIE)
-      if(filterUser.length){
-        return response.status(400).json({ message: 'Usuario já cadastrado!' })
+      for(const insertSerie of request.body){
+        const filterUser = insert.filter(value => value.SERIE === insertSerie.SERIE)
+        if(filterUser.length){
+          return response.status(400).json({ message: 'Usuario já cadastrado!' })
+        }
       }
-
+      
       // Add novo usuario na planilha
-      insert.push(request.body)
-
+      request.body.forEach(element => {
+        insert.push(element)
+      });
+      
       // Cria uma planilha a partir dos dados
       const sheetNew = XLSX.utils.json_to_sheet(insert)
 

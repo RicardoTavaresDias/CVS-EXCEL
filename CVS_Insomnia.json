@@ -7,8 +7,8 @@
 		},
 		"entries": [
 			{
-				"startedDateTime": "2025-04-17T16:31:58.267Z",
-				"time": 27.598000000000003,
+				"startedDateTime": "2025-04-17T18:49:33.396Z",
+				"time": 35.395999999999994,
 				"request": {
 					"method": "POST",
 					"url": "http://localhost:3333/insert",
@@ -27,14 +27,14 @@
 					"queryString": [],
 					"postData": {
 						"mimeType": "application/json",
-						"text": "{\n\t\t\"id\": 111,\n\t\t\"name\": \"ola\",\n\t\t\"idade\": 120\n\t}"
+						"text": "{\n\t\"EQUIPAMENTO\": \"Impressora\",\n\t\"MODELO\": \"Brother HL-L6202DW\",\n\t\"SETOR\": \"Classificação de Risco 1\",\n\t\"SERIE\": \"U64182L2N913542\"\n}"
 					},
 					"headersSize": -1,
 					"bodySize": -1
 				},
 				"response": {
-					"status": 422,
-					"statusText": "Unprocessable Entity",
+					"status": 200,
+					"statusText": "OK",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [
@@ -48,15 +48,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "169"
+							"value": "61"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"a9-JrE6m7dkcafeN4eOV3s4ut1+g7I\""
+							"value": "W/\"3d-znMibimn6WIslH6XO8fcJijevN0\""
 						},
 						{
 							"name": "Date",
-							"value": "Thu, 17 Apr 2025 16:26:56 GMT"
+							"value": "Thu, 17 Apr 2025 18:47:51 GMT"
 						},
 						{
 							"name": "Connection",
@@ -68,9 +68,9 @@
 						}
 					],
 					"content": {
-						"size": 169,
+						"size": 61,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "{\"message\":\"Error ao inserir usuario na planilha CVS!\",\"error\":{\"errno\":-4058,\"code\":\"ENOENT\",\"syscall\":\"open\",\"path\":\"C:\\\\Users\\\\Ricardo\\\\Desktop\\\\EXECEL\\\\teste.xlsx\"}}"
+						"text": "{\"message\":\"Usuario Cadastrado com sucesso, no arquivo CVS!\"}"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -82,18 +82,18 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 27.598000000000003,
+					"wait": 35.395999999999994,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "Insert"
 			},
 			{
-				"startedDateTime": "2025-04-17T16:31:58.267Z",
-				"time": 2.0349999999999997,
+				"startedDateTime": "2025-04-17T18:49:33.396Z",
+				"time": 7.09,
 				"request": {
 					"method": "DELETE",
-					"url": "http://localhost:3333/555",
+					"url": "http://localhost:3333/U64182L2N913542",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [
@@ -111,8 +111,8 @@
 					"bodySize": -1
 				},
 				"response": {
-					"status": 422,
-					"statusText": "Unprocessable Entity",
+					"status": 400,
+					"statusText": "Bad Request",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [
@@ -126,15 +126,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "169"
+							"value": "38"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"a9-3uUMgmHI9nv9DPCnbV0oz89IvL8\""
+							"value": "W/\"26-MpB7uBSRKxaesGFVniabMk+PqC8\""
 						},
 						{
 							"name": "Date",
-							"value": "Thu, 17 Apr 2025 16:27:08 GMT"
+							"value": "Thu, 17 Apr 2025 18:48:26 GMT"
 						},
 						{
 							"name": "Connection",
@@ -146,9 +146,9 @@
 						}
 					],
 					"content": {
-						"size": 169,
+						"size": 38,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "{\"message\":\"Error ao remover usuario na planilha CVS!\",\"error\":{\"errno\":-4058,\"code\":\"ENOENT\",\"syscall\":\"open\",\"path\":\"C:\\\\Users\\\\Ricardo\\\\Desktop\\\\EXECEL\\\\teste.xlsx\"}}"
+						"text": "{\"message\":\"Usuario não cadastrado!\"}"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -160,15 +160,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 2.0349999999999997,
+					"wait": 7.09,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "Delete"
 			},
 			{
-				"startedDateTime": "2025-04-17T16:31:58.267Z",
-				"time": 6.8149999999999995,
+				"startedDateTime": "2025-04-17T18:49:33.396Z",
+				"time": 8.764,
 				"request": {
 					"method": "PATCH",
 					"url": "http://localhost:3333/",
@@ -187,14 +187,14 @@
 					"queryString": [],
 					"postData": {
 						"mimeType": "application/json",
-						"text": "{\n\t\"id\": 555,\n\t\"idade\": 15\n}"
+						"text": "{\n\t\"EQUIPAMENTO\": \"Impressora\",\n\t\"MODELO\": \"Brother HL-L6202DW\",\n\t\"SETOR\": \"Classificação de Risco 88\",\n\t\"SERIE\": \"U64182L2N913542\"\n}"
 					},
 					"headersSize": -1,
 					"bodySize": -1
 				},
 				"response": {
-					"status": 422,
-					"statusText": "Unprocessable Entity",
+					"status": 400,
+					"statusText": "Bad Request",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [
@@ -208,15 +208,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "168"
+							"value": "38"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"a8-zU7aB7foTD/9iVgoS6TTtDWBnoY\""
+							"value": "W/\"26-MpB7uBSRKxaesGFVniabMk+PqC8\""
 						},
 						{
 							"name": "Date",
-							"value": "Thu, 17 Apr 2025 16:27:06 GMT"
+							"value": "Thu, 17 Apr 2025 18:48:23 GMT"
 						},
 						{
 							"name": "Connection",
@@ -228,9 +228,9 @@
 						}
 					],
 					"content": {
-						"size": 168,
+						"size": 38,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "{\"message\":\"Error a atualizar dados na planilha CVS!\",\"error\":{\"errno\":-4058,\"code\":\"ENOENT\",\"syscall\":\"open\",\"path\":\"C:\\\\Users\\\\Ricardo\\\\Desktop\\\\EXECEL\\\\teste.xlsx\"}}"
+						"text": "{\"message\":\"Usuario não cadastrado!\"}"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -242,15 +242,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 6.8149999999999995,
+					"wait": 8.764,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "Update"
 			},
 			{
-				"startedDateTime": "2025-04-17T16:31:58.267Z",
-				"time": 13.974,
+				"startedDateTime": "2025-04-17T18:49:33.396Z",
+				"time": 9.386999999999999,
 				"request": {
 					"method": "GET",
 					"url": "http://localhost:3333/",
@@ -271,8 +271,8 @@
 					"bodySize": -1
 				},
 				"response": {
-					"status": 422,
-					"statusText": "Unprocessable Entity",
+					"status": 200,
+					"statusText": "OK",
 					"httpVersion": "HTTP/1.1",
 					"cookies": [],
 					"headers": [
@@ -286,15 +286,15 @@
 						},
 						{
 							"name": "Content-Length",
-							"value": "158"
+							"value": "15611"
 						},
 						{
 							"name": "ETag",
-							"value": "W/\"9e-PSiEtGXUYAHfBw65J/bB2Z+JbZI\""
+							"value": "W/\"3cfb-ZSZMW5dGtyOMDXFobngxdWyF6t8\""
 						},
 						{
 							"name": "Date",
-							"value": "Thu, 17 Apr 2025 16:26:46 GMT"
+							"value": "Thu, 17 Apr 2025 18:48:18 GMT"
 						},
 						{
 							"name": "Connection",
@@ -306,9 +306,9 @@
 						}
 					],
 					"content": {
-						"size": 158,
+						"size": 15611,
 						"mimeType": "application/json; charset=utf-8",
-						"text": "{\"message\":\"Error ao abrir a planilha CVS!\",\"error\":{\"errno\":-4058,\"code\":\"ENOENT\",\"syscall\":\"open\",\"path\":\"C:\\\\Users\\\\Ricardo\\\\Desktop\\\\EXECEL\\\\teste.xlsx\"}}"
+						"text": "[{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Kyocera P3145\",\"SETOR\":\"Classificação de Risco 2\",\"SERIE\":\"R4H0915803\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Classificação de Risco 3\",\"SERIE\":\"BRBSS270P1\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Brother HL-L6202DW\",\"SETOR\":\"Classificação de Risco 4\",\"SERIE\":\"U64182E2N628176\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRJ350C1CT\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRC32603S7\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRJ350C14Q\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRC32603TG\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRJ350C17S\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRC32603TJ\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRJ350C169\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRC32601Z4\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRJ351C1XV\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRC32604GG\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRBSRDW01M\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"BRBSRDV0KK\"},{\"EQUIPAMENTO\":\"Impressora Termica\",\"MODELO\":\"Zebra ZD230T\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"D5N230301242\"},{\"EQUIPAMENTO\":\"Impressora Termica\",\"MODELO\":\"Zebra ZD230T\",\"SETOR\":\"Recepção Adulto\",\"SERIE\":\"D5N230503761\"},{\"SETOR\":\"CURATIVO\",\"SERIE\":\"Sala Trancado\"},{\"SETOR\":\"CURATIVO\",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio 1\",\"SERIE\":\"BRJ351C1YH\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio 1\",\"SERIE\":\"BRC32604GM\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio 1\",\"SERIE\":\"BRBSS1T05L\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio 2\",\"SERIE\":\"BRJ350C16K\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio 2\",\"SERIE\":\"BRC32603RZ\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio 2\",\"SERIE\":\"BRBSS1T065\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio 3\",\"SERIE\":\"BRJ403CXCB\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio 3\",\"SERIE\":\"BRC32603T2\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio 3\",\"SERIE\":\"BRBSRDW028\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio 4\",\"SERIE\":\"BRJ351C1YS\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio 4\",\"SERIE\":\"BRC323012Y\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio 4\",\"SERIE\":\"BRBSS1T06J\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio Pediatria 2\",\"SERIE\":\"BRJ350C17W\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio Pediatria 2\",\"SERIE\":\"BRC32601X7\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio Pediatria 2\",\"SERIE\":\"BRBSRDV0K2\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio Fast Track\",\"SERIE\":\"BRJ350C14W\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio Fast Track\",\"SERIE\":\"BRC32604HF\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio Fast Track\",\"SERIE\":\"BRBSS1T06L\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Serviço Social\",\"SERIE\":\"BRJ403CTB6\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Serviço Social\",\"SERIE\":\"BRC32604HV\"},{\"SETOR\":\"Sala da Equipe Multi\",\"SERIE\":\"Sala Trancado\"},{\"SETOR\":\"Sala da Equipe Multi\",\"SERIE\":\"Sala Trancado\"},{\"SETOR\":\"Sala da Equipe Multi\",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Medicação Adulto\",\"SERIE\":\"BRJ350C17C\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Medicação Adulto\",\"SERIE\":\"BRC32603T5\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Medicação Adulto\",\"SERIE\":\"BRBSRDV0LY\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio Ortopedia 1\",\"SERIE\":\"BRJ403CSN1\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio Ortopedia 1\",\"SERIE\":\"BRC326023T\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio Ortopedia 1\",\"SERIE\":\"BRBSS1T062\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio Ortopedia 2\",\"SERIE\":\"BRJ305C17K\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio Ortopedia 2\",\"SERIE\":\"BRC32604GN\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio Ortopedia 2\",\"SERIE\":\"BRBSRDV0LX\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Fármacia Satélite\",\"SERIE\":\"BRJ351C2JV\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Fármacia Satélite\",\"SERIE\":\"BRC32604SL\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Fármacia Satélite\",\"SERIE\":\"BRBSS210KK\"},{\"EQUIPAMENTO\":\"Impressora Termica\",\"MODELO\":\"Honeywell \",\"SETOR\":\"Fármacia Satélite\",\"SERIE\":\"20111B0D6F\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Emergência\",\"SERIE\":\"BRJ350C163\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Emergência\",\"SERIE\":\"BRC32604GC\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Emergência\",\"SERIE\":\"BRJ351C26W\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Emergência\",\"SERIE\":\"BRC32601YY\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Emergência\",\"SERIE\":\"BRBSRDW021\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Sala da TI\",\"SERIE\":\"BRJ351C1ZR\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Sala da TI\",\"SERIE\":\"BRC3260251\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRJ350C165\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRC32604G1\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRJ351C27W\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRC32604HB\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRJ350C16P\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRC32601YM\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRJ350C167\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRC32603T1\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRBSS4V05F\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"BRBSS1T05K\"},{\"EQUIPAMENTO\":\"Impressora Termica\",\"MODELO\":\"Zebra ZD230T\",\"SETOR\":\"Recepção Pediatrico\",\"SERIE\":\"D5N230301250\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Classificação de Risco Pediatrico\",\"SERIE\":\"BRBSRDV0L4\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Almoxarifado\",\"SERIE\":\"BRJ402CQSG\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Almoxarifado\",\"SERIE\":\"BRC3260449\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Almoxarifado\",\"SERIE\":\"BRJ361C2MC\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Almoxarifado\",\"SERIE\":\"BRC323013Y\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Brother HL-L6202DW\",\"SETOR\":\"Almoxarifado\",\"SERIE\":\"U64198B2N80398\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Fármacia Dispensação\",\"SERIE\":\"BRJ351C2G0\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Fármacia Dispensação\",\"SERIE\":\"BRC32305D1\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Fármacia Dispensação\",\"SERIE\":\"BRJ350C14T\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Fármacia Dispensação\",\"SERIE\":\"BRC32601ZG\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"P24a G4\",\"SETOR\":\"OBS Saude Metal 2\",\"SERIE\":\"BRJ350C150\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"OBS Saude Metal 2\",\"SERIE\":\"BRC32300KZ\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"OBS Saude Metal 2\",\"SERIE\":\"BRBSRDW024\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"OBS Saude Metal 1\",\"SERIE\":\"BRJ351C2MN\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"OBS Saude Metal 1\",\"SERIE\":\"BRC323013R\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Kyocera P3145\",\"SETOR\":\"OBS Saude Metal 1\",\"SERIE\":\"R4H0X16633\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"OBS PEDIATRICA\",\"SERIE\":\"BRJ350C16N\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"OBS PEDIATRICA\",\"SERIE\":\"BRC32604GK\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP - MFP432FDN\",\"SETOR\":\"OBS PEDIATRICA\",\"SERIE\":\"BRBSS4V05K\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultoio Odonto 1\",\"SERIE\":\"BRBSRDV0M1\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultoio Odonto 2\",\"SERIE\":\"BRJ403CSX5\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultoio Odonto 2\",\"SERIE\":\"BRC32603SJ\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultoio Odonto 2\",\"SERIE\":\"BRBSS250YM\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Sitomatico Respiratorio\",\"SERIE\":\"BRJ351C2MK\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Sitomatico Respiratorio\",\"SERIE\":\"BRC32603SN\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Vacina\",\"SERIE\":\"BRJ403CXD5\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Vacina\",\"SERIE\":\"BRC32603S5\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Vacina\",\"SERIE\":\"BRJ402CQWN\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Vacina\",\"SERIE\":\"BRC32603SC\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Vacina\",\"SERIE\":\"BRBSRDW029\"},{\"EQUIPAMENTO\":\"Cpu\",\"SETOR\":\"Consultorio Pediatrico 1\",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Monitor\",\"SETOR\":\"Consultorio Pediatrico 1\",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Impressora\",\"SETOR\":\"Consultorio Pediatrico 1\",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Consultorio Pediatrico 2\",\"SERIE\":\"BRJ350C14S\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Consultorio Pediatrico 2\",\"SERIE\":\"BRC32300LD\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Consultorio Pediatrico 2\",\"SERIE\":\"BRBSRDW019\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Almoxarifado Odonto\",\"SERIE\":\"BRJ351C1YK\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Almoxarifado Odonto\",\"SERIE\":\"BRC32603T3\"},{\"EQUIPAMENTO\":\"Cpu\",\"SETOR\":\"Farmácia Satélite \",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Monitor\",\"SETOR\":\"Farmácia Satélite \",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Impressora\",\"SETOR\":\"Farmácia Satélite \",\"SERIE\":\"Sala Trancado\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Obs Adulto\",\"SERIE\":\"BRJ350C16M\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Obs Adulto\",\"SERIE\":\"BRC32601XD\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Kyocera P3145\",\"SETOR\":\"Obs Adulto\",\"SERIE\":\"R4H0915828\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Obs Adulto\",\"SERIE\":\"BRJ350C16Q\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Obs Adulto\",\"SERIE\":\"BRC32601YT\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CT6X\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604NC\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ351C2MO\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32300YP\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CT22\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604N7\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CSWD\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604N6\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CT2S\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604SX\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CSNS\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32601YS\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CT7W\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604BR\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ351C1XZ\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32601X5\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ403CT4X\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604NM\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ351C2JW\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604NB\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ350C14P\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604NR\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ350C17T\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604TY\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ351C280\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604ND\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ351C2M5\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32601ZB\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Administração\",\"SERIE\":\"BRJ350C157\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Administração\",\"SERIE\":\"BRC32604R5\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"Kyocera M3145IDN\",\"SETOR\":\"Administração\",\"SERIE\":\"R4V0213235\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRJ350C16S\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRC32603T9\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRJ351C1YD\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRC32602N9\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRJ350C14Z\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRC32604HR\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRJ350C17M\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRC32300L3\"},{\"EQUIPAMENTO\":\"Impressora\",\"MODELO\":\"HP 408dn\",\"SETOR\":\"Enfermagem\",\"SERIE\":\"BRBSS1T06N\"},{\"EQUIPAMENTO\":\"NOTEBBOK\",\"MODELO\":\"HP PROBOOK 440 G9\",\"SETOR\":\"Gerencia\",\"SERIE\":\"BRJ346BD8C\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Gerencia\",\"SERIE\":\"BRJ350C14V\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Gerencia\",\"SERIE\":\"BRC3230137\"},{\"EQUIPAMENTO\":\"Cpu\",\"MODELO\":\"HP Pro SFF 400 G9\",\"SETOR\":\"Almoxarifado 1\",\"SERIE\":\"BRJ351C27K\"},{\"EQUIPAMENTO\":\"Monitor\",\"MODELO\":\"P24a G4\",\"SETOR\":\"Almoxarifado 2\",\"SERIE\":\"BRC32603TB\"}]"
 					},
 					"redirectURL": "",
 					"headersSize": -1,
@@ -320,15 +320,15 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 13.974,
+					"wait": 9.386999999999999,
 					"receive": 0,
 					"ssl": -1
 				},
 				"comment": "Index"
 			},
 			{
-				"startedDateTime": "2025-04-17T16:31:58.267Z",
-				"time": 26.528,
+				"startedDateTime": "2025-04-17T18:49:33.396Z",
+				"time": 59.325,
 				"request": {
 					"method": "POST",
 					"url": "http://localhost:3333/",
@@ -347,7 +347,7 @@
 					"queryString": [],
 					"postData": {
 						"mimeType": "application/json",
-						"text": "[\n\t{\n\t\t\"id\": 555,\n\t\t\"name\": \"Ricardo\",\n\t\t\"idade\": 37\n\t},\n\t{\n\t\t\"id\": 777,\n\t\t\"name\": \"Daniele\",\n\t\t\"idade\": 36\n\t},\n\t{\n\t\t\"id\": 888,\n\t\t\"name\": \"Mateus\",\n\t\t\"idade\": 15\n\t}\n]"
+						"text": "[\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Brother HL-L6202DW\",\n\t\t\"SETOR\": \"Classificação de Risco 1\",\n\t\t\"SERIE\": \"U64182L2N913542\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Kyocera P3145\",\n\t\t\"SETOR\": \"Classificação de Risco 2\",\n\t\t\"SERIE\": \"R4H0915803\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Classificação de Risco 3\",\n\t\t\"SERIE\": \"BRBSS270P1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Brother HL-L6202DW\",\n\t\t\"SETOR\": \"Classificação de Risco 4\",\n\t\t\"SERIE\": \"U64182E2N628176\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRJ350C1CT\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRC32603S7\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRJ350C14Q\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRC32603TG\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRJ350C17S\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRC32603TJ\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRJ350C169\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRC32601Z4\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRJ351C1XV\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRC32604GG\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRBSRDW01M\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"BRBSRDV0KK\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora Termica\",\n\t\t\"MODELO\": \"Zebra ZD230T\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"D5N230301242\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora Termica\",\n\t\t\"MODELO\": \"Zebra ZD230T\",\n\t\t\"SETOR\": \"Recepção Adulto\",\n\t\t\"SERIE\": \"D5N230503761\"\n\t},\n\t{\n\t\t\"SETOR\": \"CURATIVO\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"SETOR\": \"CURATIVO\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio 1\",\n\t\t\"SERIE\": \"BRJ351C1YH\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio 1\",\n\t\t\"SERIE\": \"BRC32604GM\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio 1\",\n\t\t\"SERIE\": \"BRBSS1T05L\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio 2\",\n\t\t\"SERIE\": \"BRJ350C16K\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio 2\",\n\t\t\"SERIE\": \"BRC32603RZ\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio 2\",\n\t\t\"SERIE\": \"BRBSS1T065\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio 3\",\n\t\t\"SERIE\": \"BRJ403CXCB\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio 3\",\n\t\t\"SERIE\": \"BRC32603T2\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio 3\",\n\t\t\"SERIE\": \"BRBSRDW028\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio 4\",\n\t\t\"SERIE\": \"BRJ351C1YS\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio 4\",\n\t\t\"SERIE\": \"BRC323012Y\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio 4\",\n\t\t\"SERIE\": \"BRBSS1T06J\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio Pediatria 2\",\n\t\t\"SERIE\": \"BRJ350C17W\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio Pediatria 2\",\n\t\t\"SERIE\": \"BRC32601X7\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio Pediatria 2\",\n\t\t\"SERIE\": \"BRBSRDV0K2\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio Fast Track\",\n\t\t\"SERIE\": \"BRJ350C14W\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio Fast Track\",\n\t\t\"SERIE\": \"BRC32604HF\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio Fast Track\",\n\t\t\"SERIE\": \"BRBSS1T06L\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Serviço Social\",\n\t\t\"SERIE\": \"BRJ403CTB6\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Serviço Social\",\n\t\t\"SERIE\": \"BRC32604HV\"\n\t},\n\t{\n\t\t\"SETOR\": \"Sala da Equipe Multi\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"SETOR\": \"Sala da Equipe Multi\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"SETOR\": \"Sala da Equipe Multi\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Medicação Adulto\",\n\t\t\"SERIE\": \"BRJ350C17C\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Medicação Adulto\",\n\t\t\"SERIE\": \"BRC32603T5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Medicação Adulto\",\n\t\t\"SERIE\": \"BRBSRDV0LY\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 1\",\n\t\t\"SERIE\": \"BRJ403CSN1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 1\",\n\t\t\"SERIE\": \"BRC326023T\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 1\",\n\t\t\"SERIE\": \"BRBSS1T062\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 2\",\n\t\t\"SERIE\": \"BRJ305C17K\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 2\",\n\t\t\"SERIE\": \"BRC32604GN\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio Ortopedia 2\",\n\t\t\"SERIE\": \"BRBSRDV0LX\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Fármacia Satélite\",\n\t\t\"SERIE\": \"BRJ351C2JV\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Fármacia Satélite\",\n\t\t\"SERIE\": \"BRC32604SL\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Fármacia Satélite\",\n\t\t\"SERIE\": \"BRBSS210KK\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora Termica\",\n\t\t\"MODELO\": \"Honeywell \",\n\t\t\"SETOR\": \"Fármacia Satélite\",\n\t\t\"SERIE\": \"20111B0D6F\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Emergência\",\n\t\t\"SERIE\": \"BRJ350C163\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Emergência\",\n\t\t\"SERIE\": \"BRC32604GC\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Emergência\",\n\t\t\"SERIE\": \"BRJ351C26W\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Emergência\",\n\t\t\"SERIE\": \"BRC32601YY\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Emergência\",\n\t\t\"SERIE\": \"BRBSRDW021\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Sala da TI\",\n\t\t\"SERIE\": \"BRJ351C1ZR\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Sala da TI\",\n\t\t\"SERIE\": \"BRC3260251\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRJ350C165\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRC32604G1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRJ351C27W\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRC32604HB\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRJ350C16P\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRC32601YM\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRJ350C167\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRC32603T1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRBSS4V05F\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"BRBSS1T05K\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora Termica\",\n\t\t\"MODELO\": \"Zebra ZD230T\",\n\t\t\"SETOR\": \"Recepção Pediatrico\",\n\t\t\"SERIE\": \"D5N230301250\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Classificação de Risco Pediatrico\",\n\t\t\"SERIE\": \"BRBSRDV0L4\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Almoxarifado\",\n\t\t\"SERIE\": \"BRJ402CQSG\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Almoxarifado\",\n\t\t\"SERIE\": \"BRC3260449\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Almoxarifado\",\n\t\t\"SERIE\": \"BRJ361C2MC\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Almoxarifado\",\n\t\t\"SERIE\": \"BRC323013Y\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Brother HL-L6202DW\",\n\t\t\"SETOR\": \"Almoxarifado\",\n\t\t\"SERIE\": \"U64198B2N80398\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Fármacia Dispensação\",\n\t\t\"SERIE\": \"BRJ351C2G0\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Fármacia Dispensação\",\n\t\t\"SERIE\": \"BRC32305D1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Fármacia Dispensação\",\n\t\t\"SERIE\": \"BRJ350C14T\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Fármacia Dispensação\",\n\t\t\"SERIE\": \"BRC32601ZG\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"OBS Saude Metal 2\",\n\t\t\"SERIE\": \"BRJ350C150\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"OBS Saude Metal 2\",\n\t\t\"SERIE\": \"BRC32300KZ\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"OBS Saude Metal 2\",\n\t\t\"SERIE\": \"BRBSRDW024\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"OBS Saude Metal 1\",\n\t\t\"SERIE\": \"BRJ351C2MN\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"OBS Saude Metal 1\",\n\t\t\"SERIE\": \"BRC323013R\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Kyocera P3145\",\n\t\t\"SETOR\": \"OBS Saude Metal 1\",\n\t\t\"SERIE\": \"R4H0X16633\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"OBS PEDIATRICA\",\n\t\t\"SERIE\": \"BRJ350C16N\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"OBS PEDIATRICA\",\n\t\t\"SERIE\": \"BRC32604GK\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP - MFP432FDN\",\n\t\t\"SETOR\": \"OBS PEDIATRICA\",\n\t\t\"SERIE\": \"BRBSS4V05K\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultoio Odonto 1\",\n\t\t\"SERIE\": \"BRBSRDV0M1\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultoio Odonto 2\",\n\t\t\"SERIE\": \"BRJ403CSX5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultoio Odonto 2\",\n\t\t\"SERIE\": \"BRC32603SJ\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultoio Odonto 2\",\n\t\t\"SERIE\": \"BRBSS250YM\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Sitomatico Respiratorio\",\n\t\t\"SERIE\": \"BRJ351C2MK\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Sitomatico Respiratorio\",\n\t\t\"SERIE\": \"BRC32603SN\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Vacina\",\n\t\t\"SERIE\": \"BRJ403CXD5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Vacina\",\n\t\t\"SERIE\": \"BRC32603S5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Vacina\",\n\t\t\"SERIE\": \"BRJ402CQWN\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Vacina\",\n\t\t\"SERIE\": \"BRC32603SC\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Vacina\",\n\t\t\"SERIE\": \"BRBSRDW029\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 1\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 1\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 1\",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 2\",\n\t\t\"SERIE\": \"BRJ350C14S\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 2\",\n\t\t\"SERIE\": \"BRC32300LD\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Consultorio Pediatrico 2\",\n\t\t\"SERIE\": \"BRBSRDW019\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Almoxarifado Odonto\",\n\t\t\"SERIE\": \"BRJ351C1YK\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Almoxarifado Odonto\",\n\t\t\"SERIE\": \"BRC32603T3\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"SETOR\": \"Farmácia Satélite \",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"SETOR\": \"Farmácia Satélite \",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"SETOR\": \"Farmácia Satélite \",\n\t\t\"SERIE\": \"Sala Trancado\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Obs Adulto\",\n\t\t\"SERIE\": \"BRJ350C16M\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Obs Adulto\",\n\t\t\"SERIE\": \"BRC32601XD\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Kyocera P3145\",\n\t\t\"SETOR\": \"Obs Adulto\",\n\t\t\"SERIE\": \"R4H0915828\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Obs Adulto\",\n\t\t\"SERIE\": \"BRJ350C16Q\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Obs Adulto\",\n\t\t\"SERIE\": \"BRC32601YT\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CT6X\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604NC\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ351C2MO\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32300YP\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CT22\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604N7\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CSWD\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604N6\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CT2S\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604SX\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CSNS\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32601YS\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CT7W\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604BR\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ351C1XZ\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32601X5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ403CT4X\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604NM\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ351C2JW\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604NB\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ350C14P\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604NR\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ350C17T\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604TY\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ351C280\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604ND\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ351C2M5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32601ZB\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRJ350C157\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"BRC32604R5\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"Kyocera M3145IDN\",\n\t\t\"SETOR\": \"Administração\",\n\t\t\"SERIE\": \"R4V0213235\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRJ350C16S\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRC32603T9\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRJ351C1YD\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRC32602N9\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRJ350C14Z\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRC32604HR\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRJ350C17M\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRC32300L3\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Impressora\",\n\t\t\"MODELO\": \"HP 408dn\",\n\t\t\"SETOR\": \"Enfermagem\",\n\t\t\"SERIE\": \"BRBSS1T06N\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"NOTEBBOK\",\n\t\t\"MODELO\": \"HP PROBOOK 440 G9\",\n\t\t\"SETOR\": \"Gerencia\",\n\t\t\"SERIE\": \"BRJ346BD8C\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Gerencia\",\n\t\t\"SERIE\": \"BRJ350C14V\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Gerencia\",\n\t\t\"SERIE\": \"BRC3230137\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Cpu\",\n\t\t\"MODELO\": \"HP Pro SFF 400 G9\",\n\t\t\"SETOR\": \"Almoxarifado 1\",\n\t\t\"SERIE\": \"BRJ351C27K\"\n\t},\n\t{\n\t\t\"EQUIPAMENTO\": \"Monitor\",\n\t\t\"MODELO\": \"P24a G4\",\n\t\t\"SETOR\": \"Almoxarifado 2\",\n\t\t\"SERIE\": \"BRC32603TB\"\n\t}\n]"
 					},
 					"headersSize": -1,
 					"bodySize": -1
@@ -376,7 +376,7 @@
 						},
 						{
 							"name": "Date",
-							"value": "Thu, 17 Apr 2025 16:29:02 GMT"
+							"value": "Thu, 17 Apr 2025 18:07:55 GMT"
 						},
 						{
 							"name": "Connection",
@@ -402,7 +402,7 @@
 					"dns": -1,
 					"connect": -1,
 					"send": 0,
-					"wait": 26.528,
+					"wait": 59.325,
 					"receive": 0,
 					"ssl": -1
 				},

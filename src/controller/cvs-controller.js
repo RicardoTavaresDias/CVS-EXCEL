@@ -51,6 +51,13 @@ export class CvsController {
       // Converte a planilha para JSON
       const data = XLSX.utils.sheet_to_json(sheet, {  header: 2 })
 
+      // Verifica se o usuario existe na planilha
+      const filterUser = data.filter(value => value.id === Number(request.body.id))
+      if(!filterUser.length){
+        console.log(filterUser)
+        return response.status(400).json({ message: 'Usuario não cadastrado!' })
+      } 
+
       // Atualizando dado
       const update = data.map(value => {
         if (value.id === request.body.id){

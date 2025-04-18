@@ -17,7 +17,7 @@ export class XlsxController {
       response.status(200).json({ message: 'Salvo com sucesso, no arquivo CVS!' })
 
     }catch(error) {
-      response.status(422).json({ message: 'Error ao criar planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error ao criar planilha CVS!', error: error.message })
     }
   }
 
@@ -35,7 +35,7 @@ export class XlsxController {
       response.status(200).json(data)
 
     }catch(error) {
-      response.status(422).json({ message: 'Error ao abrir a planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error ao abrir a planilha CVS!', error: error.message })
     }
   }
 
@@ -80,7 +80,7 @@ export class XlsxController {
       response.status(200).json({ message: 'Arquivo alterado com sucesso, no arquivo CVS!' })
 
     }catch(error) {
-      response.status(422).json({ message: 'Error a atualizar dados na planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error a atualizar dados na planilha CVS!', error: error.message })
     }
   }
 
@@ -117,7 +117,7 @@ export class XlsxController {
       response.status(200).json({ message: 'Usuario removido com sucesso, no arquivo CVS!' })
 
     }catch(error) {
-      response.status(422).json({ message: 'Error ao remover usuario na planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error ao remover usuario na planilha CVS!', error: error.message })
     }
   }
 
@@ -158,7 +158,7 @@ export class XlsxController {
       response.status(200).json({ message: 'Usuario Cadastrado com sucesso, no arquivo CVS!' })
 
     }catch(error) {
-      response.status(422).json({ message: 'Error ao inserir usuario na planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error ao inserir usuario na planilha CVS!', error: error.message })
     }
   }
   

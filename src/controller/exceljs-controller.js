@@ -36,7 +36,7 @@ export class ExceljsController {
       response.status(200).json({ message: "Dados inseridos com sucesso!"})
 
     }catch(error){
-      response.status(422).json({ message: 'Error ao inserir usuario na planilha CVS!', error: error })
+      response.status(422).json({ message: 'Error ao inserir usuario na planilha CVS!', error: error.message })
     }
   }
 

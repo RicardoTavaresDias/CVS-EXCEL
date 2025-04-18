@@ -1,10 +1,10 @@
 import express from 'express'
-import { routerCvs } from './routers/router-cvs.js'
+import { routers } from './routers/index.js'
 
 export const app = express()
 
 app.use(express.json())
-app.use(routerCvs)
+app.use(routers)
 
 
 

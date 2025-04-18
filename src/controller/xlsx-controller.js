@@ -1,6 +1,6 @@
 import XLSX from 'xlsx'
 
-export class CvsController {
+export class XlsxController {
   createCVS(request, response){
     try {
       const data = request.body 
@@ -161,4 +161,5 @@ export class CvsController {
       response.status(422).json({ message: 'Error ao inserir usuario na planilha CVS!', error: error })
     }
   }
+  
 }
